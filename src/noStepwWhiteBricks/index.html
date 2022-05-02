@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+  <main class="container">
+    <header class="title big-text">
+      别踩白块
+    </header>
+    <div class="checkerboard">
+      <div class="row">
+        <div class="block white-block"></div>
+        <div class="block white-block"></div>
+        <div class="block white-block"></div>
+        <div class="block black-block"></div>
+      </div>
+      <div class="row">
+        <div class="block white-block"></div>
+        <div class="block white-block"></div>
+        <div class="block black-block"></div>
+        <div class="block white-block"></div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // 移动端适配
+    const scale = document.documentElement.clientWidth / 750
+    document.documentElement.style.fontSize = (32 * Math.min(scale, 2)) + 'px'
+  </script>
+  
+  <script src="./script/index.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@media all and (max-width: 750px) {
+  .pc-hide {
+    display: none;
+  }
+  .mobile-show {
+    display: block;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .pc-show {
+    display: block;
+  }
+  .mobile-hide {
+    display: none;
+  }
+}
