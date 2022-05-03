@@ -4,7 +4,8 @@
   "description": "原生css",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "restart": "rm -rf node_modules pnpm-lock.yaml & pnpm i",
+    "depClear": "rm -rf node_modules pnpm-lock.yaml"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,9 @@
   "homepage": "https://github.com/gaearon-byte/origin-css#readme",
   "devDependencies": {
     "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "@parcel/config-default": "^2.5.0",
+    "@parcel/transformer-sass": "^2.5.0"
   }
 }

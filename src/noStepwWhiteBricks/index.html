@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./styles/reset.css">
+  <!-- <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/global.css">
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/index.css"> -->
 </head>
 <body>
   <main class="container">
@@ -15,18 +15,10 @@
       别踩白块
     </header>
     <div class="checkerboard">
-      <div class="row">
-        <div class="block white-block"></div>
-        <div class="block white-block"></div>
-        <div class="block white-block"></div>
-        <div class="block black-block"></div>
-      </div>
-      <div class="row">
-        <div class="block white-block"></div>
-        <div class="block white-block"></div>
-        <div class="block black-block"></div>
-        <div class="block white-block"></div>
-      </div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
     </div>
   </main>
 
@@ -36,6 +28,6 @@
     document.documentElement.style.fontSize = (32 * Math.min(scale, 2)) + 'px'
   </script>
   
-  <script src="./script/index.js" defer></script>
+  <script type="module" src="./script/index.ts"></script>
 </body>
 </html>
