@@ -1,0 +1,24 @@
+@font-face {
+    /* 字体族名称 */
+    font-family: 'test';
+    /* 字体地址，可识别：ttf otf woff */
+    src: url('../font/EduQLDBeginner-Regular.ttf'), /* 优先级高，当资源不存在时，才会使用下面的 url */
+        url('../font/EduQLDBeginner-Bold.ttf') format('HFOSHOIAHIH'); /* format 指定了 */
+}
+
+p {
+    font-size: 24px;
+    /* font-family 指定使用哪个字体族 */
+    font-family: 'test';
+
+    width: 200px;
+
+    /* 设置文本溢出显示为 ... */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div {
+    text-indent: 2em;
+}
